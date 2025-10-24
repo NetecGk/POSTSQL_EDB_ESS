@@ -1,18 +1,13 @@
-#test
-a
-##test 2
-a
-###test 3
-a
-a####test 4
-a
-# Nombre del laboratorio 
+# Instalación de EDB Postgres Advanced Server
 
 ## Objetivo de la práctica:
 Al finalizar la práctica, serás capaz de:
-- Objetivo1
-- Objetivo2
-- Objetivo3
+1.	Elegir la plataforma en la que deseas instalar EDB Postgres Advanced Server.
+2.	Descargar el instalador de EDB Postgres Advanced Server desde el sitio web de EnterpriseDB correspondiente a la plataforma elegida.
+3.	Preparar la plataforma para la instalación.
+4.	Instalar EDB Postgres Advanced Server.
+5.	Conéctar a EDB Postgres Advanced Server utilizando psql.
+
 
 ## Objetivo Visual 
 Crear un diagrama o imagen que resuma las actividades a realizar, un ejemplo es la siguiente imagen. 
