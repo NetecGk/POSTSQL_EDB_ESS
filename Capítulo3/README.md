@@ -26,24 +26,71 @@ Agregar una tabla con la información que pueda requerir el participante durante
 
 ## Instrucciones 
 <!-- Proporciona pasos detallados sobre cómo configurar y administrar sistemas, implementar soluciones de software, realizar pruebas de seguridad, o cualquier otro escenario práctico relevante para el campo de la tecnología de la información -->
-### Tarea 1. Instalacio´n
-a.	Iniciar sesión como  root.  Escriba 
+### Tarea 1. Instalación
+1.	Crea el usuario enterprisedb.  Escriba lo siguiente
+  a.	Iniciar sesión como  root.  Escriba 
+  ```shell
+  su - root
+  ``` 
+  y luego ingrese la contraseña de root.
+  
+  Agregue usuario y password para enterprisedb
+  
+  ```shell
+  useradd enterprisedb
+  passwd enterprisedb
+  ```	
+  
+  d.	Ingrese la contraseña edb y luego introduzcala nuevamente edb.
+  
+  ![01](../images/01/01.png)
+
+2.	Inicie sesión en su entorno Linux como superusuario. 
+ 
+3.	Para instalar EDB Postgres Advanced Server mediante RPM, necesita el repositorio EPEL. Primero, instale el repositorio EPEL con el comando yum. Escriba:  
+
+  ```shell
+  su – root 
+  ```
+Y luego la contraseña de root
+
 ```shell
-su - root
-``` 
-y luego ingrese la contraseña de root.
+# yum install epel-release 
+```
+![02](../images/01/02.png)
 
-Agregue usuario y password para enterprisedb
+4.	A continuación, abra una ventana del navegador y vaya a https://www.enterprisedb.com/downloads/edb-postgres-advanced-server   
+
+  a.	Producto = EDB Postgres Advanced Server 
+  b.	Versión = 13.0  
+  c.	Sistema operativo = Linux x86-64 & 32 
+  d.	Tipo = RPM 
+  e.	Cómo acceder = hacer clic en Access Repository 
+  f.	Inicie sesión o regístrese para obtener una cuenta de sitio web si se solicita. 
+    i.	Si ya tiene credenciales, utilízalas para iniciar sesión y acceder a yum.enterprisedb.com con el fin de descargar el repositorio RPM.
+    ii.	Si no tiene credenciales, regístrate y recibirás un correo electrónico de EnterpriseDB en tu dirección de correo electrónico registrada con las credenciales para acceder a yum.enterprisedb.com y descargar el repositorio RPM. 
+ 
+5.	Ve a yum.enterprisedb.com . Si se te solicita, introduce tu nombre de usuario y contraseña y haz clic en edb-repo para descargar el repositorio RPM. 
+ 
+6.	Ve a la carpeta Descargas. Escribe los siguientes comandos
+```shell
+cd /home/(username)/Downloads/  ls 
+```
+Podrás encontrar el archivo del RPM llamado edb-repo-latest.norach.rpm 
+
+7.	Instala edb-repo-latest.noarch.rpm como usuario root. Escriba:
 
 ```shell
-useradd enterprisedb
-passwd enterprisedb
-```	
+su – root 
+```
 
-d.	Ingrese la contraseña edb y luego introduzcala nuevamente edb.
+y luego ingresa la contraseña de root 
 
-![01](../images/01/01.png)
+```shell
+rpm –ivh edb-repo-latest.noarch.rpm 
+```
 
+![03](../images/01/03.png)
 
 ### Tarea 2. Descripción de la tarea a realizar.
 Paso 1. Debe de relatar el instructor en verbo infinito, claro y conciso cada actividad para ir construyendo paso a paso en el objetivo de la tarea.
