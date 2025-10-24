@@ -61,11 +61,11 @@ Y luego la contraseña de root
 
 4.	A continuación, abra una ventana del navegador y vaya a https://www.enterprisedb.com/downloads/edb-postgres-advanced-server   
 
-  a.	Producto = EDB Postgres Advanced Server 
-  b.	Versión = 13.0  
-  c.	Sistema operativo = Linux x86-64 & 32 
-  d.	Tipo = RPM 
-  e.	Cómo acceder = hacer clic en Access Repository 
+  a.	Producto = EDB Postgres Advanced Server. 
+  b.	Versión = 13.0.  
+  c.	Sistema operativo = Linux x86-64 & 32. 
+  d.	Tipo = RPM. 
+  e.	Cómo acceder = hacer clic en Access Repository. 
   f.	Inicie sesión o regístrese para obtener una cuenta de sitio web si se solicita. 
     i.	Si ya tiene credenciales, utilízalas para iniciar sesión y acceder a yum.enterprisedb.com con el fin de descargar el repositorio RPM.
     ii.	Si no tiene credenciales, regístrate y recibirás un correo electrónico de EnterpriseDB en tu dirección de correo electrónico registrada con las credenciales para acceder a yum.enterprisedb.com y descargar el repositorio RPM. 
