@@ -31,6 +31,7 @@ a.	Iniciar sesión como  root.  Escriba  su - root y luego ingrese la contraseñ
 b.	useradd enterprisedb 
 c.	passwd enterprisedb 
 d.	Ingrese la contraseña edb y luego introduzcala nuevamente edb 
+![01](../images/01/01.png)
 
 
 ### Tarea 2. Descripción de la tarea a realizar.
