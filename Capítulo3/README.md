@@ -29,7 +29,7 @@ Agregar una tabla con la información que pueda requerir el participante durante
 ### Tarea 1. Crear el usuario enterprisedb
 a.	Iniciar sesión como  root.  Escriba 
 
-### shell
+
 ```shell
 su - root
 ``` 
@@ -38,7 +38,6 @@ y luego ingrese la contraseña de root.
 
 Agregue usuario y password para enterprisedb
 
-### shell
 ```shell
 useradd enterprisedb
 passwd enterprisedb
