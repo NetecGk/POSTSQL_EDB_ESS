@@ -29,9 +29,17 @@ Agregar una tabla con la información que pueda requerir el participante durante
 ### Tarea 1. Crear el usuario enterprisedb
 a.	Iniciar sesión como  root.  Escriba  su - root y luego ingrese la contraseña de root.
 
-b.	useradd enterprisedb.
+### shell
+```shell
+#!/bin/sh
 
-c.	passwd enterprisedb.
+useradd enterprisedb
+passwd enterprisedb
+```
+
+b.	
+
+c.	
 
 d.	Ingrese la contraseña edb y luego introduzcala nuevamente edb.
 
