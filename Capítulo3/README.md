@@ -27,10 +27,14 @@ Agregar una tabla con la información que pueda requerir el participante durante
 ## Instrucciones 
 <!-- Proporciona pasos detallados sobre cómo configurar y administrar sistemas, implementar soluciones de software, realizar pruebas de seguridad, o cualquier otro escenario práctico relevante para el campo de la tecnología de la información -->
 ### Tarea 1. Crear el usuario enterprisedb
-a.	Iniciar sesión como  root.  Escriba  su - root y luego ingrese la contraseña de root 
-b.	useradd enterprisedb 
-c.	passwd enterprisedb 
-d.	Ingrese la contraseña edb y luego introduzcala nuevamente edb 
+a.	Iniciar sesión como  root.  Escriba  su - root y luego ingrese la contraseña de root.
+
+b.	useradd enterprisedb.
+
+c.	passwd enterprisedb.
+
+d.	Ingrese la contraseña edb y luego introduzcala nuevamente edb.
+
 ![01](../images/01/01.png)
 
 
