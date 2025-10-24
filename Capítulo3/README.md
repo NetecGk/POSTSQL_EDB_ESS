@@ -26,7 +26,7 @@ Agregar una tabla con la información que pueda requerir el participante durante
 
 ## Instrucciones 
 <!-- Proporciona pasos detallados sobre cómo configurar y administrar sistemas, implementar soluciones de software, realizar pruebas de seguridad, o cualquier otro escenario práctico relevante para el campo de la tecnología de la información -->
-### Tarea 1. Instalación
+### Tarea 1. Configuración inicial
 
 1.	Crea el usuario enterprisedb.  Escriba lo siguiente:
   a.	Iniciar sesión como  root.  Escriba 
@@ -93,12 +93,35 @@ rpm –ivh edb-repo-latest.noarch.rpm
 
 ![03](../images/01/03.png)
 
-### Tarea 2. Descripción de la tarea a realizar.
-Paso 1. Debe de relatar el instructor en verbo infinito, claro y conciso cada actividad para ir construyendo paso a paso en el objetivo de la tarea.
+8.	Ve al directorio /etc/yum.repos.d/ . Escribe los siguientes comandos:  
+```shell
+cd /etc/yum.repos.d ls 
+```
+Podrás encontrar el archivo  edb.repo 
 
-Paso 2. <!-- Añadir instrucción -->
+9.	Actualiza el nombre de usuario y la contraseña en el archivo /etc/yum.repos.d/edb.repo y cambia el parámetro enabled a 1 para los siguientes repositorios:  edb .
+Escribe:  
+```shell
+vi /etc/yum.repos.d/edb.repo 
+```
 
-Paso 3. <!-- Añadir instrucción -->
+Realizar los cambios presionando <insert> luego guarda el archivo presionando <ESC> y escribiendo :wq 
+
+### Tarea 2. Instalación
+
+1.	Para la instalación mediante RPM, descarga el archivo edb-as13-server-13.1.4-1.rhel7.x86_64 desde:  https://yum.enterprisedb.com/edb/redhat/rhel-7-x86_64/repoview/edb-as13server.html
+2.	Ahora, para instalar EDB Postgres Advanced Server, tienes dos opciones:
+   - Puedes instalar edb-as13-server-13.1.4-1.rhel7.x86_64.rpm utilizando el comando rpm. Escribe:
+```shell
+# cd /home/training/Downloads 
+# rpm –ivh edb-as13-server-13.1.4-1.rhel7.x86_64.rpm 
+```
+   - O bien. Puedes instalarlo usando el comando yum. Este mostrará una lista de los paquetes y dependencias que se instalarán y pedirá confirmación antes de proceder con la instalación.
+
+```shell
+yum install edb-as13-server 
+```
+![04](../images/01/04.png)
 
 ### Resultado esperado
 En esta sección se debe mostrar el resultado esperado de nuestro laboratorio
