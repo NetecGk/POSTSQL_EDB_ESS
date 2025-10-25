@@ -123,6 +123,52 @@ yum install edb-as13-server
 ```
 ![04](../images/01/04.png)
 
+. . . . . 
+
+![05](../images/01/05.png)
+
+3. Después de instalar EDB Postgres Advanced Server, crea un clúster de base de datos e inicia el clúster utilizando los servicios del sistema.
+Escribe los siguientes comandos:
+
+```shell
+# /usr/edb/as13/bin/edb-as-13-setup initdb 
+# systemctl start edb-as-13.service 
+
+```
+4.	Configura los perfiles de entorno (environmental profiles).
+
+- a.	Inicia sesión como el usuario enterprisedb. Escribe:
+```shell
+su - enterprisedb 
+```
+Luego introduce la contraseña del usuario enterprisedb.
+-    b.	Edita el archivo .bash_profile. Escribe 
+```shell
+vi .bash_profile 
+```
+- Agrega la siguiente ruta al PATH:
+
+```shell
+PATH=$PATH:$HOME/.local/bin:$HOME/bin:/usr/edb/as13/bin 
+```
+
+- Agrega una variable de entorno para la ubicación del directorio de datos del clúster predeterminado.   
+```shell
+export PGDATA=/var/lib/edb/as13/data
+```
+
+- Agrega una variable de entorno para el usuario de base de datos predeterminado. 
+```shell
+export PGUSER=enterprisedb 
+```
+
+- Agrega una variable de entorno para el nombre de base de datos predeterminado.
+```shell
+export PGDATABASE=ed
+```
+
+![06](../images/01/06.png)
+
 ### Resultado esperado
 En esta sección se debe mostrar el resultado esperado de nuestro laboratorio
 ![imagen resultado](../images/img3.png)
