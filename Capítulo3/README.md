@@ -58,7 +58,7 @@ Y luego la contraseña de root
 ```shell
 # yum install epel-release 
 ```
-![02](../images/01/02.png)
+ <img src="../images/01/02.png" width="500" >
 
 4.	A continuación, abra una ventana del navegador y vaya a https://www.enterprisedb.com/downloads/edb-postgres-advanced-server   
 
@@ -91,7 +91,7 @@ y luego ingresa la contraseña de root
 rpm –ivh edb-repo-latest.noarch.rpm 
 ```
 
-![03](../images/01/03.png)
+ <img src="../images/01/03.png" width="500" >
 
 8.	Ve al directorio /etc/yum.repos.d/ . Escribe los siguientes comandos:  
 ```shell
@@ -121,11 +121,11 @@ Realizar los cambios presionando <insert> luego guarda el archivo presionando <E
 ```shell
 yum install edb-as13-server 
 ```
-![04](../images/01/04.png)
+ <img src="../images/01/04.png" width="500" >
 
 . . . . . 
 
-![05](../images/01/05.png)
+ <img src="../images/01/05.png" width="500" >
 
 3. Después de instalar EDB Postgres Advanced Server, crea un clúster de base de datos e inicia el clúster utilizando los servicios del sistema.
 Escribe los siguientes comandos:
@@ -136,7 +136,7 @@ Escribe los siguientes comandos:
 
 ```
 
-![06](../images/01/06.png)
+ <img src="../images/01/06.png" width="500" >
 4.	Configura los perfiles de entorno (environmental profiles).
 
 - a.	Inicia sesión como el usuario enterprisedb. Escribe:
@@ -169,7 +169,7 @@ export PGUSER=enterprisedb
 export PGDATABASE=ed
 ```
 
-![07](../images/01/07.png)
+ <img src="../images/01/07.png" width="500" >
 
 - Guarda el archivo. Dentro del editor vi, presiona la tecla <ESC> para salir del modo de edición y luego escribe:
 ```shell
@@ -183,7 +183,7 @@ Esto guardará los cambios (write) y cerrará (quit) el archivo .bash_profile.
 
 ### Tarea 2. Prueba de instalación
 1. Para probar el archivo .bash_profile: Escribe el siguiente comando:
-![08](../images/01/08.jpg)
+ <img src="../images/01/08.jpg" width="500" >
 
 2. Conéctate a EDB Postgres Advanced Server utilizando psql.
 Escribe el siguiente comando:
@@ -199,4 +199,4 @@ Luego introduce la contraseña del usuario de base de datos enterprisedb.
 
 ### Resultado esperado
 En esta sección se debe mostrar el resultado esperado de nuestro laboratorio
-![08](../images/01/08.jpg)
+ <img src="../images/01/08.jpg" width="500" >
