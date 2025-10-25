@@ -42,8 +42,9 @@ Al finalizar la práctica, serás capaz de:
   ```	
   
   b.	Ingrese la contraseña edb y luego introduzcala nuevamente edb.
-  
-  ![01](../images/01/01.png)
+
+  <img src="../images/01/01.png" width="500" >
+ 
 
 2.	Inicie sesión en su entorno Linux como superusuario.
  
