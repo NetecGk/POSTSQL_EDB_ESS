@@ -21,7 +21,7 @@ Al finalizar la práctica, serás capaz de:
 ## Tabla de ayuda:
 | Usuario Linux| Contraseña |
 | --- | --- |
-| root | eroot |
+| root | root |
 
 ## Instrucciones 
 
