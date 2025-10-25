@@ -11,8 +11,8 @@ Al finalizar la práctica, serás capaz de:
 
 ## Objetivo Visual 
 
-<img src="../images/01/00.png" width="50" height="50">
-![diagrama1](../images/01/00.png)
+<img src="../images/01/00.png" width="300" >
+
 
 
 ## Duración aproximada:
