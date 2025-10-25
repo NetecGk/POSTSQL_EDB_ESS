@@ -198,5 +198,5 @@ Luego introduce la contraseña del usuario de base de datos enterprisedb.
 
 
 ### Resultado esperado
-En esta sección se debe mostrar el resultado esperado de nuestro laboratorio
+
  <img src="../images/01/08.jpg" width="500" >
