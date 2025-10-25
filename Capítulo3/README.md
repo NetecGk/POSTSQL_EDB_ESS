@@ -10,7 +10,7 @@ Al finalizar la práctica, serás capaz de:
 
 
 ## Objetivo Visual 
-Crear un diagrama o imagen que resuma las actividades a realizar, un ejemplo es la siguiente imagen. 
+
 
 ![diagrama1](../images/01/00.png)
 
@@ -19,13 +19,12 @@ Crear un diagrama o imagen que resuma las actividades a realizar, un ejemplo es 
 - 90 minutos.
 
 ## Tabla de ayuda:
-Agregar una tabla con la información que pueda requerir el participante durante el laboratorio, como versión de software, IPs de servers, usuarios y credenciales de acceso.
-| Contraseña | Correo | Código |
-| --- | --- | ---|
-| Netec2024 | edgardo@netec.com | 123abc |
+| Usuario Linux| Contraseña |
+| --- | --- |
+| root | eroot |
 
 ## Instrucciones 
-<!-- Proporciona pasos detallados sobre cómo configurar y administrar sistemas, implementar soluciones de software, realizar pruebas de seguridad, o cualquier otro escenario práctico relevante para el campo de la tecnología de la información -->
+
 ### Tarea 1. Configuración inicial
 
 1.	Crea el usuario enterprisedb.  Escriba lo siguiente:
