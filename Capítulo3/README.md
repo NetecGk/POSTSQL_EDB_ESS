@@ -135,6 +135,8 @@ Escribe los siguientes comandos:
 # systemctl start edb-as-13.service 
 
 ```
+
+![06](../images/01/06.png)
 4.	Configura los perfiles de entorno (environmental profiles).
 
 - a.	Inicia sesión como el usuario enterprisedb. Escribe:
@@ -167,8 +169,34 @@ export PGUSER=enterprisedb
 export PGDATABASE=ed
 ```
 
-![06](../images/01/06.png)
+![07](../images/01/07.png)
+
+- Guarda el archivo. Dentro del editor vi, presiona la tecla <ESC> para salir del modo de edición y luego escribe:
+```shell
+<ESC>:wq 
+```
+
+Esto guardará los cambios (write) y cerrará (quit) el archivo .bash_profile.
+
+- Salir. Escribe exit  Luego, vuelve a iniciar sesión como el usuario enterprisedb. Escribe su – enterprisedb y proporciona la contraseña del usuario enterprisedb. 
+
+
+### Tarea 2. Prueba de instalación
+1. Para probar el archivo .bash_profile: Escribe el siguiente comando:
+![08](../images/01/08.jpg)
+
+2. Conéctate a EDB Postgres Advanced Server utilizando psql.
+Escribe el siguiente comando:
+
+```shell
+$ psql -d edb -U enterprisedb 
+```
+
+Luego introduce la contraseña del usuario de base de datos enterprisedb.
+
+3.	Para salir de psql, escribe: \q  
+
 
 ### Resultado esperado
 En esta sección se debe mostrar el resultado esperado de nuestro laboratorio
-![imagen resultado](../images/img3.png)
+![08](../images/01/08.jpg)
