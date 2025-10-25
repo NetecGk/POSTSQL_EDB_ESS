@@ -11,7 +11,7 @@ Al finalizar la práctica, serás capaz de:
 
 ## Objetivo Visual 
 
-<img src="../images/01/00.png" width="300" >
+<img src="../images/01/00.png" width="500" >
 
 
 
