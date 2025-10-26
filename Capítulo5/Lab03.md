@@ -40,7 +40,7 @@ Luego introduce la contraseña del usuario enterprisedb.
 vi /var/lib/edb/as13/data/postgresql.conf 
 ```
 
-Luego presiona la tecla <INSERT> para entrar en modo de edición. 
+Luego presiona la tecla "<INSERT>" para entrar en modo de edición. 
 
 
 3.	Realiza los siguientes cambios: 
