@@ -64,7 +64,5 @@ Luego presiona la tecla <INSERT> para entrar en modo de edición.
 5.	Reinicia el clúster de Postgres para aplicar los cambios. Escribe:  
 
 ```bash
-_ctl -D /var/lib/edb/as13/data restart 
-```
-vi /edbdata/postgresql.conf  
+pg _ctl -D /var/lib/edb/as13/data restart 
 ```
