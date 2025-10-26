@@ -63,6 +63,3 @@ pg_ctl -D /var/lib/edb/as13/data restart
 ```
 
 <img src="../images/05/01/01.jpg" width="500" >
-
-\q 
-          ```
