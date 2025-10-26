@@ -68,15 +68,45 @@ luego presiona la tecla Insert
    
 <img src="../images/04/04.jpg" width="500" >
 
+8. Guarda y cierra el archivo. Escribe:
+
+<Esc>:wq <Enter> 
+
+9.	Inicia el clúster. Escribe:
+
+```bash
+pg_ctl -D /edbdata start  
+```
+
+<img src="../images/04/05.jpg" width="500" >
+
+10.	Recarga el cluster. Escribe:   
+```bash
+pg_ctl -D /edbdata reload 
+```
+O, dentro de la terminal psql, escribe:
+
+```sql
+SELECT pg_reload_conf(); 
+```
+
+<img src="../images/04/06.jpg" width="500" >
+
+11. Detén el clúster. Escribe:
+```bash
+pg_ctl -D /edbdata -mf stop
+```
+
+<img src="../images/04/07.jpg" width="500" >
 
 
-### Tarea 2. Descripción de la tarea a realizar.
-Paso 1. Debe de relatar el instructor en verbo infinito, claro y conciso cada actividad para ir construyendo paso a paso en el objetivo de la tarea.
+12. Inicia el clúster. Escribe:  
+```bash
+pg_ctl -D /edbdata start 
+```
 
-Paso 2. <!-- Añadir instrucción -->
+<img src="../images/04/08.jpg" width="500" >
 
-Paso 3. <!-- Añadir instrucción -->
 
 ### Resultado esperado
-En esta sección se debe mostrar el resultado esperado de nuestro laboratorio
-![imagen resultado](../images/img3.png)
+<img src="../images/04/08.jpg" width="500" >
