@@ -1,4 +1,4 @@
-# Logging
+# Configuración
 
 ## Objetivo de la práctica:
 Al finalizar la práctica, serás capaz de:
