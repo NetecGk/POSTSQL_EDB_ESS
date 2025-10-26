@@ -10,7 +10,7 @@ Al finalizar la práctica, serás capaz de:
 -	Definir memoria temporal de 8 MB.
 
 ## Objetivo Visual 
-<img src="../images/05/04/01.png" width="500" >
+<img src="../images/05/03/00.png" width="500" >
 
 ## Duración aproximada:
 - 30 minutos.
@@ -62,4 +62,4 @@ Luego presiona la tecla "INSERT" para entrar en modo de edición.
 pg_ctl -D /var/lib/edb/as13/data restart 
 ```
 
-<img src="../images/05/03/00.png" width="500" >
+<img src="../images/05/03/01.jpg" width="500" >
