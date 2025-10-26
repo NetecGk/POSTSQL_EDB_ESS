@@ -19,9 +19,9 @@ Al finalizar la práctica, serás capaz de:
 - 60 minutos.
 
 ## Tabla de ayuda:
-Agregar una tabla con la información que pueda requerir el participante durante el laboratorio, como versión de software, IPs de servers, usuarios y credenciales de acceso.
+
 | Usuario | Password | 
-| --- | --- | ---|
+| --- | --- | 
 | root | root| 
 ## Instrucciones 
 
@@ -33,7 +33,12 @@ Agregar una tabla con la información que pueda requerir el participante durante
 ```bash
 sudo mkdir /edbdata  
 ```
+3.	Cambia la propiedad del directorio al usuario enterprisedb. Escribe:
 
+```bash
+sudo chown -R enterprisedb:enterprisedb/edbdata   
+```
+ <img src="../images/04/01.jpg" width="500" >
 
 
 ### Tarea 2. Descripción de la tarea a realizar.
