@@ -11,7 +11,7 @@ Al finalizar la práctica, serás capaz de:
 
 
 ## Objetivo Visual 
-<img src="../images/04/00.jpg" width="500" >
+<img src="../images/04/00.png" width="500" >
 
 ## Duración aproximada:
 - 60 minutos.
