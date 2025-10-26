@@ -1,4 +1,4 @@
-# Shared Buffer 
+# Logging
 
 ## Objetivo de la práctica:
 Al finalizar la práctica, serás capaz de:
