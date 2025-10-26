@@ -58,8 +58,9 @@ Luego presiona la tecla <INSERT> para entrar en modo de edición.
 
 4.	Guarda y cierra el archivo.  Escribir   
 
+```bash
 <Esc>:wq <Enter> 
-
+```
 5.	Reinicia el clúster de Postgres para aplicar los cambios. Escribe:  
 
 ```bash
