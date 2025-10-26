@@ -4,10 +4,10 @@
 Al finalizar la práctica, serás capaz de:
 1.	Se va a desarrollar un nuevo sitio web para una tienda de música en línea. 
 
-− Crea un nuevo clúster llamado edbdata con propiedad del usuario enterprisedb.
-− Inicia tu clúster edbdata 
-− Recarga tu clúster utilizando la utilidad pg_ctl y la función pg_reload_conf()
-− Deten tu cluster edbdata en modo rápido (fast mode).
+- Crea un nuevo clúster llamado edbdata con propiedad del usuario enterprisedb.
+- Inicia tu clúster edbdata 
+- Recarga tu clúster utilizando la utilidad pg_ctl y la función pg_reload_conf()
+- Deten tu cluster edbdata en modo rápido (fast mode).
 
 
 ## Objetivo Visual 
