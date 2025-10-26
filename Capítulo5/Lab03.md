@@ -45,11 +45,11 @@ Luego presiona la tecla "INSERT" para entrar en modo de edición.
 
 3.	Realiza los siguientes cambios: 
 
-- autovacuum_max_workers = 6 
-- autovacuum_vacuum_threshold = 100 
-- autovacuum_analyze_threshold = 100 
-- autovacuum_vacuum_scale_factor = 0.3 
-- autovacuum_vacuum_cost_limit = 100
+- shared_buffers = 256MB 
+- work_mem = 8MB 
+- maintenance_work_mem = 64MB 
+- effective_cache_size = 512MB  
+
 
 4.	Guarda y cierra el archivo.  Escribir   
 
@@ -59,5 +59,7 @@ Luego presiona la tecla "INSERT" para entrar en modo de edición.
 5.	Reinicia el clúster de Postgres para aplicar los cambios. Escribe:  
 
 ```bash
-pg _ctl -D /var/lib/edb/as13/data restart 
+pg_ctl -D /var/lib/edb/as13/data restart 
 ```
+
+<img src="../images/05/03/00.png" width="500" >
