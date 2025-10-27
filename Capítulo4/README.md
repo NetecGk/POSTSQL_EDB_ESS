@@ -14,7 +14,7 @@ Al finalizar la práctica, serás capaz de:
 <img src="../images/04/00.png" width="500" >
 
 ## Duración aproximada:
-- 60 minutos.
+- 45 minutos.
 
 ## Tabla de ayuda:
 
