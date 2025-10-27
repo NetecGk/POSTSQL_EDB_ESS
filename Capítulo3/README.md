@@ -16,7 +16,7 @@ Al finalizar la práctica, serás capaz de:
 
 
 ## Duración aproximada:
-- 90 minutos.
+- 45 minutos.
 
 ## Tabla de ayuda:
 | Usuario Linux| Contraseña |
