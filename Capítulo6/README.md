@@ -25,8 +25,6 @@ Al finalizar la práctica, serás capaz de:
 
 ### Tarea 1. 
 
-Nota: Descomenta las líneas de todos los parámetros modificados para asegurarte de que los cambios sean reconocidos. 
-
 1.	Abre una ventana de terminal. Escribe  
 
 ```bash
