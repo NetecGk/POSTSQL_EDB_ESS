@@ -1,41 +1,82 @@
-# Nombre del laboratorio 
+# Respaldo, Recuperación y PITR (Backup, Recovery & PITR)
 
 ## Objetivo de la práctica:
 Al finalizar la práctica, serás capaz de:
-- Objetivo1
-- Objetivo2
-- Objetivo3
+
+- Gestionar y configurar bases de datos mediante conexión, exploración, diagnóstico, asignación de privilegios y creación de objetos como vistas y secuencias.
+- Respaldar y exportar estructuras y datos de la base de datos mediante dumps específicos de esquemas, tablas y datos, optimizando el proceso de restauración.
+- Gestionar respaldo del clúster y formatos comprimidos
+- Restaurar una base de datos
+- Configurar y ejecutar respaldos en modo de archivado, asignando permisos y ubicaciones de almacenamiento para garantizar la recuperación y continuidad del clúster de base de datos.
+
 
 ## Objetivo Visual 
-Crear un diagrama o imagen que resuma las actividades a realizar, un ejemplo es la siguiente imagen. 
-
-![diagrama1](../images/img1.png)
+<img src="../images/11/00.png" width="500" >
 
 ## Duración aproximada:
-- xx minutos.
+- 60 minutos.
 
 ## Tabla de ayuda:
-Agregar una tabla con la información que pueda requerir el participante durante el laboratorio, como versión de software, IPs de servers, usuarios y credenciales de acceso.
-| Contraseña | Correo | Código |
-| --- | --- | ---|
-| Netec2024 | edgardo@netec.com | 123abc |
 
+| Usuario | Password | 
+| --- | --- | 
+| root | root| 
 ## Instrucciones 
-<!-- Proporciona pasos detallados sobre cómo configurar y administrar sistemas, implementar soluciones de software, realizar pruebas de seguridad, o cualquier otro escenario práctico relevante para el campo de la tecnología de la información -->
-### Tarea 1. Descripción de la tarea a realizar.
-Paso 1. Debe de relatar el instructor en verbo infinito, claro y conciso cada actividad para ir construyendo paso a paso en el objetivo de la tarea.
 
-Paso 2. <!-- Añadir instrucción -->
+### Tarea 1. 
 
-Paso 3. <!-- Añadir instrucción -->
+XXXXXXXXX
 
-### Tarea 2. Descripción de la tarea a realizar.
-Paso 1. Debe de relatar el instructor en verbo infinito, claro y conciso cada actividad para ir construyendo paso a paso en el objetivo de la tarea.
 
-Paso 2. <!-- Añadir instrucción -->
+1.	Abrir un terminal y iniciar session como  enterprisedb.  
+```bash
+su - enterprisedb 
+```
+Y entonces ingrese el password
 
-Paso 3. <!-- Añadir instrucción -->
 
-### Resultado esperado
-En esta sección, se debe mostrar el resultado esperado de nuestro laboratorio
-![imagen resultado](../images/img3.png)
+### Tarea 2. 
+
+XXXXXXXXX
+
+
+1.	Abrir un terminal y iniciar session como  enterprisedb.  
+```bash
+su - enterprisedb 
+```
+Y entonces ingrese el password
+
+
+### Tarea 3. 
+
+XXXXXXXXX
+
+
+1.	Abrir un terminal y iniciar session como  enterprisedb.  
+```bash
+su - enterprisedb 
+```
+Y entonces ingrese el password
+
+### Tarea 4. 
+
+XXXXXXXXX
+
+
+1.	Abrir un terminal y iniciar session como  enterprisedb.  
+```bash
+su - enterprisedb 
+```
+Y entonces ingrese el password
+
+### Tarea 5. 
+
+XXXXXXXXX
+
+
+1.	Abrir un terminal y iniciar session como  enterprisedb.  
+```bash
+su - enterprisedb 
+```
+Y entonces ingrese el password
+
