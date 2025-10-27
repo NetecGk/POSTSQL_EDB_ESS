@@ -15,7 +15,7 @@ Importante: Este laboratorio debe realizarse después del Ejercicio de Laborator
 <img src="../images/06/03/00.png" width="500" >
 
 ## Duración aproximada:
-- 30 minutos.
+- 20 minutos.
 
 ## Tabla de ayuda:
 
