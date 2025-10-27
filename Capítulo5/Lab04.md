@@ -18,7 +18,7 @@ Configura:
 <img src="../images/05/04/01.png" width="500" >
 
 ## Duración aproximada:
-- 30 minutos.
+- 20 minutos.
 
 ## Tabla de ayuda:
 
