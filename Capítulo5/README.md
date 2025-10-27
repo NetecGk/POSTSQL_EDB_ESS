@@ -15,7 +15,7 @@ Realiza los cambios necesarios en el archivo de parámetros del servidor con las
 <img src="../images/05/01/00.png" width="500" >
 
 ## Duración aproximada:
-- 30 minutos.
+- 20 minutos.
 
 ## Tabla de ayuda:
 
