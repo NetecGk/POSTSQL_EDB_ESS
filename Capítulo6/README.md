@@ -1,43 +1,78 @@
-# Nombre del laboratorio 
+# Creación de una base de datos
 
 ## Objetivo de la práctica:
 Al finalizar la práctica, serás capaz de:
-- Objetivo1
-- Objetivo2
-- Objetivo3
+
+1. Se va a desarrollar un nuevo sitio web para una tienda de música en línea. 
+- Crea un usuario de base de datos llamado edbuser en tu clúster existente. 
+- Crea una base de datos edbstore con propiedad del usuario edbuser . 
+- Inicia sesión en la base de datos edbstore utilizando el usuario edbuser y crea el esquema edbuser
+- Cierra la sesión de psql. 
+
 
 ## Objetivo Visual 
-Crear un diagrama o imagen que resuma las actividades a realizar, un ejemplo es la siguiente imagen. 
-
-![diagrama1](../images/img1.png)
+<img src="../images/06/01/00.png" width="500" >
 
 ## Duración aproximada:
-- xx minutos.
+- 30 minutos.
 
 ## Tabla de ayuda:
-Agregar una tabla con la información que pueda requerir el participante durante el laboratorio, como versión de software, IPs de servers, usuarios y credenciales de acceso.
-| Contraseña | Correo | Código |
-| --- | --- | ---|
-| Netec2024 | edgardo@netec.com | 123abc |
 
+| Usuario | Password | 
+| --- | --- | 
+| root | root| 
 ## Instrucciones 
-<!-- Proporciona pasos detallados sobre cómo configurar y administrar sistemas, implementar soluciones de software, realizar pruebas de seguridad, o cualquier otro escenario práctico relevante para el campo de la tecnología de la información -->
-### Tarea 1. Descripción de la tarea a realizar.
-Paso 1. Debe de relatar el instructor en verbo infinito, claro y conciso cada actividad para ir construyendo paso a paso en el objetivo de la tarea.
 
-Paso 2. <!-- Añadir instrucción -->
+### Tarea 1. 
 
-Paso 3. <!-- Añadir instrucción -->
+Nota: Descomenta las líneas de todos los parámetros modificados para asegurarte de que los cambios sean reconocidos. 
 
-### Tarea 2. Descripción de la tarea a realizar.
-Paso 1. Debe de relatar el instructor en verbo infinito, claro y conciso cada actividad para ir construyendo paso a paso en el objetivo de la tarea.
+1.	Abre una ventana de terminal. Escribe  
 
-Paso 2. <!-- Añadir instrucción -->
+```bash
+su – enterprisedb 
+```
 
-Paso 3. <!-- Añadir instrucción -->
+Luego introduce la contraseña del usuario enterprisedb.
 
-### Resultado esperado
-En esta sección se debe mostrar el resultado esperado de nuestro laboratorio
-![imagen resultado](../images/img3.png)
+
+2.	Conéctate a la base de datos edb utilizando la terminal de psql. Escribe  
+
+```bash
+psql -d edb -U enterprisedb 
+```
+
+Luego introduce la contraseña del usuario enterprisedb.
+
+3.	Crea el usuario edbuser con su contraseña de edb. Escribe
+
+```sql
+CREATE USER edbuser PASSWORD 'edbuser'; 
+```
+
+4.	Crea la base de datos edbstore con el propietario edbuser. Escribe:  
+
+```sql
+CREATE DATABASE edbstore owner edbuser; 
+```
+
+5.	Cambia la conexión a la base de datos edbstore con el usuario edbuser. Escribe:
+
+```sql
+\c edbstore edbuser 
+```
+Luego introduce la contraseña de edbuser.
+
+6.	Crea el esquema edbuser. Escribe:
+
+```sql
+CREATE SCHEMA edbuser authorization edbuser; 
+```
+
+7.	Sal de psql . Escribe  
+
+```sql
+\q 
+```
 
 
