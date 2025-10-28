@@ -66,7 +66,7 @@ Cada uno de estos laboratorios está diseñado para ofrecerte una experiencia pr
 - **Descripción**: Generar backups, restauraciones y puntos de recuperación.
 - ⏱️ **Duración estimada**: 60 min.
 
-### [Práctica 15. Tareas de Rutinas de Mantenimiento](./Laboratorio_3.md)
+### [Práctica 15. Tareas de Rutinas de Mantenimiento](Capítulo12/README.md)
 - **Descripción**: Realizar mantenimiento y optimización manual de tablas e índices para mejorar el rendimiento del servidor.
 - ⏱️**Duración estimada**: 30 min.
 
@@ -86,7 +86,7 @@ Cada uno de estos laboratorios está diseñado para ofrecerte una experiencia pr
 - **Descripción**: Administrar tablespaces creando, asignando, verificando y eliminando sus estructuras en la base de datos.
 - ⏱️ **Duración estimada**: 20 min.
 
-### [Práctica 20. Compatibilidad con Oracle (Oracle Compatibility)](./Laboratorio_2.md)
+### [Práctica 20. Compatibilidad con Oracle (Oracle Compatibility)](Capítulo17/README.md)
 - **Descripción**: Configurar compatibilidad Oracle en EDB, creando tablas, sinónimos y enlaces entre bases dentro del clúster.
 - **Duración estimada**: 20 min.
 
