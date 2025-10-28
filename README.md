@@ -1,206 +1,102 @@
-# Funciones que podría usar el instructor
-En este documento se muestran algunas muestras de formatos que se pueden usar en el archivo **README.me** que pueden ser de ayuda para el instructor
+<img src="images/neteclogo.png" alt="logo" width="300"/>
 
-- [Fragmentos de código](#fragmentos-de-codigo)
-- [Listas](#listas)
-- [Tablas](#tablas)
-- [Insertar imágenes](#imagenes)
-- [Alertas](#alertas)
+# EDB PostgreSQL 13 Foundation 
 
-# Fragmentos de codigo
+## Plataforma de laboratorios
 
+Te damos la bienvenida a la **plataforma de laboratorios** del curso **EDB PostgreSQL 13 Foundation**. Aquí podrás explorar diferentes tecnologías a través de prácticas guiadas. ¡Desarrolla tus habilidades y lleva tus conocimientos al siguiente nivel!
 
-## Bloques de código
-Para agregar algún fragmento de código debemos de usar la siguiente sintáxis:
+## Lista de laboratorios
 
+Cada uno de estos laboratorios está diseñado para ofrecerte una experiencia práctica. Haz clic en los enlaces para comenzar.
 
-### Python
+### [Práctica 1. Instalación de EDB Postgres Advanced Server](Capítulo3/README.md) 
+    - **Descripción**: Instalar y configurar EDB Postgres Advanced Server en la plataforma elegida y verificar su funcionamiento conectándose con psql.
+   - ⏱️ **Duración estimada**: 45 min.
 
-```python
-import datetime
+### [Práctica 2. Clústeres de Base de Datos](Capítulo4/README.md)
+    - **Descripción**: Administrar un clúster llamado edbdata creando, iniciando, recargando su configuración y deteniéndolo correctamente en modo rápido.
+   - ⏱️ **Duración estimada**: 45 min.
 
-def str2date(sf:str):#"2020-05-08"
-    datos=sf.split('-')#['2020', '05', '08']
-                #'2020':str->2020:int, '05':str->05:int, '08':str->05:int
-    fecha=datetime.date(int(datos[0]), int(datos[1]), int(datos[2]))
-    return fecha
+### [Práctica 3. Configuración ](Capítulo5/README.md)
+    - **Descripción**: Configurar el archivo postgresql.conf para optimizar la administración del servidor, aumentando el número máximo de conexiones a 200, reservando 10 para DBAs y estableciendo un límite de 10 segundos para la autenticación de clientes.
+   - ⏱️**Duración estimada**: 20 min.
 
-sf=input("ingrese la fecha YYYY-MM-DD: ")
-fecha=str2date(sf)
-print(fecha)
-print(type(fecha))
-```
+### [Práctica 4. Logging](Capítulo5/Lab02.md) 
+   - **Descripción**: Configurar los parámetros de auditoría del servidor para registrar errores, consultas que excedan los 5 segundos y conexiones de usuarios.
+   - ⏱️ **Duración estimada**: 20 min.
 
-### Java
-```java
-public void cleanup() {
-        try {
-            if (connection != null)
-                connection.close();
-        } catch (Exception e) {
-            System.out.println("Excepción capturada: ");
-            e.printStackTrace();
-        }
-    }
-```
+### [Práctica 5. Shared Buffer](Capítulo5/Lab03.md)
+   - **Descripción**: Optimizar el rendimiento del servidor PostgreSQL ajustando los parámetros de memoria.
+   - ⏱️ **Duración estimada**: 20 min.
 
+### [Práctica 6. Vacuum](Capítulo5/Lab04.md)
+   - **Descripción**: Configurar los parámetros de autovacuum para optimizar el mantenimiento automático del servidor.
+   - ⏱️**Duración estimada**: 20 min.
 
-### shell
-```shell
-#!/bin/sh
+### [Práctica 7. Creación de una base de datos](Capítulo6/README.md) 
+   - **Descripción**: Crear y gestionar un usuario, base de datos y esquema para una tienda de música en línea.
+   - ⏱️ **Duración estimada**: 20 min.
 
-CONTADOR=0
-until [ $CONTADOR – ge 3]]; do
-    echo El contador es $CONTADOR
-    CONTADOR=$(($CONTADOR+1))
-done
-```
+### [Práctica 8. Uso de esquemas](Capítulo6/Lab02.md)
+   - **Descripción**: Implementar un esquema y usuario dedicados para transacciones en línea, asegurando la correcta asignación de tablas al esquema ebuy.
+   - ⏱️ **Duración estimada**: 20 min.
 
-### Ruby
-```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-```
+### [Práctica 9. Creación objetos base de datos](Capítulo6/Lab03.md)
+   - **Descripción**: Instalar los objetos de ejemplo en la base de datos edbstore ejecutando el script edbstore.sql con privilegios del usuario enterprisedb.
+   - ⏱️**Duración estimada**: 20 min.
 
-### HTML
+### [Práctica 10. Consulta de Metadata](Capítulo6/Lab04.md) 
+   - **Descripción**: Consultar y verificar bases de datos y tablas mediante SQL y comandos meta de psql en edbstore.
+   - ⏱️ **Duración estimada**: 20 min.
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+### [Práctica 11. Herramientas de Usuario CLI](Capítulo7/README.md)
+   - **Descripción**: Gestionar y explorar bases de datos y objetos usando comandos meta de psql.
+   - ⏱️ **Duración estimada**: 30 min.
 
-```
+### [Práctica 12. Seguridad](Capítulo9/README.md)
+   - **Descripción**: Configurar y asegurar las conexiones al servidor, otorgando privilegios y resolviendo posibles problemas de acceso.
+   - ⏱️**Duración estimada**: 45 min.
 
-### Javascript
+### [Práctica 13. Fundamentos SQL](Capítulo10/README.md) 
+   - **Descripción**: Crear vistas y secuencias.
+   - ⏱️ **Duración estimada**: 35 min.
 
-```javascript
-var database=db.getSiblingDB("database")
-var collection=database.getCollection("people")
+### [Práctica 14. Respaldo, Recuperación y PITR (Backup, Recovery & PITR)](Capítulo11/README.md)
+   - **Descripción**: Generar backups, restauraciones y puntos de recuperación.
+   - ⏱️ **Duración estimada**: 60 min.
 
-var data=[
-    {name:"edgar"},
-    {name:"juan"},
-    {name:"alicia"}
-]
+### [Práctica 15. Tareas de Rutinas de Mantenimiento](./Laboratorio_3.md)
+   - **Descripción**: Realizar mantenimiento y optimización manual de tablas e índices para mejorar el rendimiento del servidor.
+   - ⏱️**Duración estimada**: 30 min.
 
-data.forEach(t=>{
-    console.log(t)
-    var result=collection.insertOne(t)
-    console.log(result)
-})
+### [Práctica 16. Diccionario de datos](Capítulo13/README.md) 
+   - **Descripción**: Monitorear y reportar la actividad y estructura del clúster, incluyendo esquemas, vistas, sesiones activas y tamaños de bases de datos.
+  - ⏱️ **Duración estimada**: 40 min.
 
-```
-# Listas
+### [Práctica 17. Moviendo Datos](Capítulo14/README.md)
+   - **Descripción**: Exportar e importar datos entre tablas utilizando archivos CSV para respaldar y replicar información.
+  - ⏱️ **Duración estimada**: 20 min.
 
-## Lista simple
-- elemento 1
-- elemento 2
-- elemento 3
+### [Práctica 18. EDB*Plus](Capítulo15/README.md)
+   - **Descripción**: Gestionar sesiones y configuraciones en EDB*Plus, visualizando estructuras y automatizando confirmaciones de transacciones.
+   - ⏱️**Duración estimada**: 20 min.
 
-## Lista números
-1. elemento 1
-2. elemento 2
-3. elemento 3
+### [Práctica 19. Tablespaces](Capítulo16/README.md) 
+   - **Descripción**: Administrar tablespaces creando, asignando, verificando y eliminando sus estructuras en la base de datos.
+  - ⏱️ **Duración estimada**: 20 min.
 
-## Lista anidada
-- Elemento principal
-    - Elemento interno 1
-    - Elemento interno 2
-        - elemento 
-        - elemento
-    - elemento interno 3
+### [Práctica 20. Compatibilidad con Oracle (Oracle Compatibility)](./Laboratorio_2.md)
+   - **Descripción**: Configurar compatibilidad Oracle en EDB, creando tablas, sinónimos y enlaces entre bases dentro del clúster.
+   - ⏱️ **Duración estimada**: 20 min.
 
-## Lista de tareas
-- [ ] tarea 1
-- [x] tarea 2
-- [ ] tarea 3 
-- [ ] \(Optional) tarea opcional 
+---
 
-# Tablas
+## 📬 **Contacto y más información**
 
-## Tabla simple
+Si tienes alguna pregunta o necesitas más detalles, no dudes en [contactarnos](mailto:soporte@netec.com). También puedes encontrar más recursos en nuestra [página](https://netec.com).
 
-| título columna 1  | título columna 2|
-| ------------- | ------------- |
-| contenido 1  | contenido 2  |
-| contenido 3  | contenido 4  |
+---
 
+¡Gracias por visitar nuestra plataforma! No olvides revisar todos los laboratorios y comenzar tu viaje de aprendizaje hoy mismo.
 
-## Tabla con formato en las columnas
-
-| Command | Description |
-| --- | --- |
-| `git status` | List all *new or modified* files |
-| `git diff` | Show file differences that **haven't been** staged |
-
-
-## Alinear contenido en tabla
-| Left-aligned | Center-aligned | Right-aligned |
-| :---         |     :---:      |          ---: |
-| git status   | git status     | git status    |
-| git diff     | git diff       | git diff      |
-
-# Imagenes
-
-Para insertar una imágen se usa la siguiente sintáxis:
-
-```
-![descripción de la imagen](url imagen)
-```
-El url de la imágen puede ser de la siguiente forma:
-
-- Si la imágen esta dentro de la misma rama se usa la siguiente sintaxis:
-    ```
-     ![description](/assets/images/imagen1.png)
-    ```
-    - Donde:
-        - la ruta */assets/images* esta dentro de la rama donde se encuentra el archivo **README.md**
-
-- Si la imágen esta en otra rama se usa la siguiente sintaxis:
-    ```
-    ![description](/../name_branch/assets/images/imagen1.png)
-    ```
-    - Donde: 
-        - La ruta */../name_branch/assets/images/* esta dentro de el mismo repositorio pero es una rama diferente. 
-
-- Si la imagén esta en internet se usa la siguiente sintaxis: 
-    ``` 
-     ![description](https://url/imagen.png)
-    ```
-- Si se quiere controlar el tamaño de la imágen se debe usar html, de la siguiente forma:
-    ``` html
-    <img src="url image" width="200" height="200">
-     
-    ```
-    - Donde: 
-        - En el html se pueden editar los siguiente elementos: 
-            - **url image**:  La ruta de la imágen
-            - **width**: Ancho de la imágen en pixeles
-            - **height**: Alto de la imágen en pixeles
-
-
-# Alertas
-
-> [!NOTE]
-> útil para agregar alguna nota extra
-
-> [!TIP]
-> útil para dar algún tip
-
-> [!IMPORTANT]
-> útil para algún recordatorio
-
-> [!WARNING]
-> útil para alertar a los alumnos
-
-> [!CAUTION]
-> útil para sugerencias y precauciones.
