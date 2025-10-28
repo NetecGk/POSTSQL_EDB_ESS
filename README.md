@@ -68,7 +68,7 @@ Cada uno de estos laboratorios está diseñado para ofrecerte una experiencia pr
 
 ### [Práctica 15. Tareas de Rutinas de Mantenimiento](Capítulo12/README.md)
 - **Descripción**: Realizar mantenimiento y optimización manual de tablas e índices para mejorar el rendimiento del servidor.
-- ⏱️**Duración estimada**: 30 min.
+- ⏱️**Duración estimada**: 40 min.
 
 ### [Práctica 16. Diccionario de datos](Capítulo13/README.md) 
 - **Descripción**: Monitorear y reportar la actividad y estructura del clúster, incluyendo esquemas, vistas, sesiones activas y tamaños de bases de datos.
@@ -88,7 +88,7 @@ Cada uno de estos laboratorios está diseñado para ofrecerte una experiencia pr
 
 ### [Práctica 20. Compatibilidad con Oracle (Oracle Compatibility)](Capítulo17/README.md)
 - **Descripción**: Configurar compatibilidad Oracle en EDB, creando tablas, sinónimos y enlaces entre bases dentro del clúster.
-- **Duración estimada**: 20 min.
+- **Duración estimada**: 30 min.
 
 ---
 
