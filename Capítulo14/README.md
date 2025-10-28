@@ -1,41 +1,58 @@
-# Nombre del laboratorio 
+# Moviendo Datos 
 
 ## Objetivo de la práctica:
 Al finalizar la práctica, serás capaz de:
-- Objetivo1
-- Objetivo2
-- Objetivo3
+
+- ExportaR la tabla emp del esquema edbuser a un archivo CSV, incluyendo los encabezados de las columnas. 
+- CreaR una tabla copyemp con la misma estructura que la tabla emp. 
+- CargaR el archivo CSV (del paso 1) en la tabla copyemp. 
+
 
 ## Objetivo Visual 
-Crear un diagrama o imagen que resuma las actividades a realizar, un ejemplo es la siguiente imagen. 
-
-![diagrama1](../images/img1.png)
+<img src="../images/14/00.png" width="500" >
 
 ## Duración aproximada:
-- xx minutos.
+- 20 minutos.
 
 ## Tabla de ayuda:
-Agregar una tabla con la información que pueda requerir el participante durante el laboratorio, como versión de software, IPs de servers, usuarios y credenciales de acceso.
-| Contraseña | Correo | Código |
-| --- | --- | ---|
-| Netec2024 | edgardo@netec.com | 123abc |
 
+| Usuario | Password | 
+| --- | --- | 
+| root | root| 
 ## Instrucciones 
-<!-- Proporciona pasos detallados sobre cómo configurar y administrar sistemas, implementar soluciones de software, realizar pruebas de seguridad, o cualquier otro escenario práctico relevante para el campo de la tecnología de la información -->
-### Tarea 1. Descripción de la tarea a realizar.
-Paso 1. Debe de relatar el instructor en verbo infinito, claro y conciso cada actividad para ir construyendo paso a paso en el objetivo de la tarea.
 
-Paso 2. <!-- Añadir instrucción -->
+### Tarea 1. 
 
-Paso 3. <!-- Añadir instrucción -->
+1.	Abre una terminal e inicia sesión como el usuario enterprisedb.  Escribe:
+```bash
+su - enterprisedb 
+```
+Luego la contraseña.
 
-### Tarea 2. Descripción de la tarea a realizar.
-Paso 1. Debe de relatar el instructor en verbo infinito, claro y conciso cada actividad para ir construyendo paso a paso en el objetivo de la tarea.
+2.	Conéctate a la base de datos edbstore .  Escribe:
+```bash
+psql -d edbstore -U enterprisedb  
+```
+y luego la contraseña de enterprisedb .
 
-Paso 2. <!-- Añadir instrucción -->
+3.	Descargue la tabla emp del esquema edbuser del archivo csv, on encabezados de columna. Escribe:
+```sql
+COPY edbuser.emp to '/home/enterprisedb/emp.csv' with csv header; 
+```
+<img src="../images/14/01.jpg" width="800" >
 
-Paso 3. <!-- Añadir instrucción -->
+4.	Crea la table copyemp con la misma estructura emp .  escribe:
+```sql
+CREATE TABLE copyemp (like edbuser.emp); 
+```
 
-### Resultado esperado
-En esta sección se debe mostrar el resultado esperado de nuestro laboratorio
-![imagen resultado](../images/img3.png)
+5.	Importa el archive del paso 1 a la tabla copyemp.  Escribe: 
+```sql
+COPY copyemp FROM '/home/enterprisedb/emp.csv' with csv header; 
+```
+<img src="../images/14/02.jpg" width="800" >
+
+6.	Salir  psql escribe: 
+```sql
+\q 
+```
