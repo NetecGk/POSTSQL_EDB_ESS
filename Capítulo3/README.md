@@ -181,7 +181,7 @@ Esto guardará los cambios (write) y cerrará (quit) el archivo .bash_profile.
 - Salir. Escribe exit  Luego, vuelve a iniciar sesión como el usuario enterprisedb. Escribe su – enterprisedb y proporciona la contraseña del usuario enterprisedb. 
 
 
-### Tarea 2. Prueba de instalación
+### Tarea 3. Prueba de instalación
 1. Para probar el archivo .bash_profile: Escribe el siguiente comando:
  <img src="../images/01/08.jpg" width="500" >
 
